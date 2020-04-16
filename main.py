@@ -11,7 +11,7 @@ def fix_predigits(pi_digits, curr_index=-1):
 
 
 def spigot_algorithm(digits):
-    array_len = int(10 * digits / 3)
+    array_len = int(10 * digits / 3) + 1
     array = [2] * array_len
     carry = 0
     curr_sum = 0
@@ -36,7 +36,7 @@ def spigot_algorithm(digits):
 
 
 if __name__ == '__main__':
-    DIGITS = 6000
+    DIGITS = 100
 
     t1 = time()
     pi_digits = spigot_algorithm(DIGITS)
